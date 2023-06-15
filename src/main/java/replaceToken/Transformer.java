@@ -27,7 +27,6 @@ public class Transformer {
      * @return The transformed text
      */
     public String transform(String text) {
-       // String transformText = text;
         int capacity = (int) (text.length() * 1.2f);
         StringBuilder stringBuilder = new StringBuilder(capacity);
 
@@ -56,7 +55,7 @@ public class Transformer {
      * @param text To capitalize my first letter in my text
      * @return The text wich my first character capitalize in my text
      */
-    public String Uppercase(String text) {
+    public String uppercase(String text) {
         String transformText;
         transformText = text;
 

@@ -1,6 +1,12 @@
 package replaceToken;
 
+
+import org.slf4j.LoggerFactory;
+import org.slf4j.Logger;
+
 public class Main {
+
+    private static Logger logger = LoggerFactory.getLogger(Main.class);
     /**
      *
      * @param args
@@ -12,10 +18,8 @@ public class Main {
 
         transform.addToken("name","tata");
 
-
         String newText = transform.transform(text);
-        //newText = transform.Uppercase(newText);
 
-        System.out.println(newText);
+        logger.info(newText);
     }
 }
